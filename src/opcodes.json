@@ -1,0 +1,3201 @@
+{
+    "0x00": {
+        "mnemonic": "NOP",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0x01": {
+        "mnemonic": "LD",
+        "bytes": 3,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+                "name": "BC"
+            },
+            {
+                "name": "d16",
+                "bytes": 2
+            }
+        ]
+    },
+    "0x02": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "BC",
+                "immediate": false
+            },
+            {
+                "name": "A"
+            }
+        ],
+        "immediate": false
+    },
+    "0x03": {
+        "mnemonic": "INC",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "BC"
+        }]
+    },
+    "0x04": {
+        "mnemonic": "INC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "B"
+        }]
+    },
+    "0x05": {
+        "mnemonic": "DEC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "B"
+        }]
+    },
+    "0x06": {
+        "mnemonic": "LD",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "B"
+            },
+            {
+                "name": "d8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0x07": {
+        "mnemonic": "RLCA",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0x08": {
+        "mnemonic": "LD",
+        "bytes": 3,
+        "cycles": [
+            20
+        ],
+        "operands": [{
+                "name": "a16",
+                "bytes": 2,
+                "immediate": false
+            },
+            {
+                "name": "SP"
+            }
+        ],
+        "immediate": false
+    },
+    "0x09": {
+        "mnemonic": "ADD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "HL"
+            },
+            {
+                "name": "BC"
+            }
+        ]
+    },
+    "0x0A": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "BC",
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0x0B": {
+        "mnemonic": "DEC",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "BC"
+        }]
+    },
+    "0x0C": {
+        "mnemonic": "INC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "C"
+        }]
+    },
+    "0x0D": {
+        "mnemonic": "DEC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "C"
+        }]
+    },
+    "0x0E": {
+        "mnemonic": "LD",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "C"
+            },
+            {
+                "name": "d8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0x0F": {
+        "mnemonic": "RRCA",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0x10": {
+        "mnemonic": "STOP",
+        "bytes": 2,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "d8",
+            "bytes": 1
+        }]
+    },
+    "0x11": {
+        "mnemonic": "LD",
+        "bytes": 3,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+                "name": "DE"
+            },
+            {
+                "name": "d16",
+                "bytes": 2
+            }
+        ]
+    },
+    "0x12": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "DE",
+                "immediate": false
+            },
+            {
+                "name": "A"
+            }
+        ],
+        "immediate": false
+    },
+    "0x13": {
+        "mnemonic": "INC",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "DE"
+        }]
+    },
+    "0x14": {
+        "mnemonic": "INC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "D"
+        }]
+    },
+    "0x15": {
+        "mnemonic": "DEC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "D"
+        }]
+    },
+    "0x16": {
+        "mnemonic": "LD",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "D"
+            },
+            {
+                "name": "d8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0x17": {
+        "mnemonic": "RLA",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0x18": {
+        "mnemonic": "JR",
+        "bytes": 2,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+            "name": "r8",
+            "bytes": 1
+        }]
+    },
+    "0x19": {
+        "mnemonic": "ADD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "HL"
+            },
+            {
+                "name": "DE"
+            }
+        ]
+    },
+    "0x1A": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "DE",
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0x1B": {
+        "mnemonic": "DEC",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "DE"
+        }]
+    },
+    "0x1C": {
+        "mnemonic": "INC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "E"
+        }]
+    },
+    "0x1D": {
+        "mnemonic": "DEC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "E"
+        }]
+    },
+    "0x1E": {
+        "mnemonic": "LD",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "E"
+            },
+            {
+                "name": "d8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0x1F": {
+        "mnemonic": "RRA",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0x20": {
+        "mnemonic": "JR",
+        "bytes": 2,
+        "cycles": [
+            12,
+            8
+        ],
+        "operands": [{
+                "name": "NZ"
+            },
+            {
+                "name": "r8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0x21": {
+        "mnemonic": "LD",
+        "bytes": 3,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+                "name": "HL"
+            },
+            {
+                "name": "d16",
+                "bytes": 2
+            }
+        ]
+    },
+    "0x22": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "HL",
+                "increment": true,
+                "immediate": false
+            },
+            {
+                "name": "A"
+            }
+        ],
+        "immediate": false
+    },
+    "0x23": {
+        "mnemonic": "INC",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "HL"
+        }]
+    },
+    "0x24": {
+        "mnemonic": "INC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "H"
+        }]
+    },
+    "0x25": {
+        "mnemonic": "DEC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "H"
+        }]
+    },
+    "0x26": {
+        "mnemonic": "LD",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "H"
+            },
+            {
+                "name": "d8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0x27": {
+        "mnemonic": "DAA",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0x28": {
+        "mnemonic": "JR",
+        "bytes": 2,
+        "cycles": [
+            12,
+            8
+        ],
+        "operands": [{
+                "name": "Z"
+            },
+            {
+                "name": "r8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0x29": {
+        "mnemonic": "ADD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "HL"
+            },
+            {
+                "name": "HL"
+            }
+        ]
+    },
+    "0x2A": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "HL",
+                "increment": true,
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0x2B": {
+        "mnemonic": "DEC",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "HL"
+        }]
+    },
+    "0x2C": {
+        "mnemonic": "INC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "L"
+        }]
+    },
+    "0x2D": {
+        "mnemonic": "DEC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "L"
+        }]
+    },
+    "0x2E": {
+        "mnemonic": "LD",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "L"
+            },
+            {
+                "name": "d8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0x2F": {
+        "mnemonic": "CPL",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0x30": {
+        "mnemonic": "JR",
+        "bytes": 2,
+        "cycles": [
+            12,
+            8
+        ],
+        "operands": [{
+                "name": "NC"
+            },
+            {
+                "name": "r8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0x31": {
+        "mnemonic": "LD",
+        "bytes": 3,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+                "name": "SP"
+            },
+            {
+                "name": "d16",
+                "bytes": 2
+            }
+        ]
+    },
+    "0x32": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "HL",
+                "decrement": true,
+                "immediate": false
+            },
+            {
+                "name": "A"
+            }
+        ],
+        "immediate": false
+    },
+    "0x33": {
+        "mnemonic": "INC",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "SP"
+        }]
+    },
+    "0x34": {
+        "mnemonic": "INC",
+        "bytes": 1,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+            "name": "HL",
+            "immediate": false
+        }],
+        "immediate": false
+    },
+    "0x35": {
+        "mnemonic": "DEC",
+        "bytes": 1,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+            "name": "HL",
+            "immediate": false
+        }],
+        "immediate": false
+    },
+    "0x36": {
+        "mnemonic": "LD",
+        "bytes": 2,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+                "name": "HL",
+                "immediate": false
+            },
+            {
+                "name": "d8",
+                "bytes": 1
+            }
+        ],
+        "immediate": false
+    },
+    "0x37": {
+        "mnemonic": "SCF",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0x38": {
+        "mnemonic": "JR",
+        "bytes": 2,
+        "cycles": [
+            12,
+            8
+        ],
+        "operands": [{
+                "name": "C"
+            },
+            {
+                "name": "r8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0x39": {
+        "mnemonic": "ADD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "HL"
+            },
+            {
+                "name": "SP"
+            }
+        ]
+    },
+    "0x3A": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "HL",
+                "decrement": true,
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0x3B": {
+        "mnemonic": "DEC",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "SP"
+        }]
+    },
+    "0x3C": {
+        "mnemonic": "INC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "A"
+        }]
+    },
+    "0x3D": {
+        "mnemonic": "DEC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "A"
+        }]
+    },
+    "0x3E": {
+        "mnemonic": "LD",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "d8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0x3F": {
+        "mnemonic": "CCF",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0x40": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "B"
+            },
+            {
+                "name": "B"
+            }
+        ]
+    },
+    "0x41": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "B"
+            },
+            {
+                "name": "C"
+            }
+        ]
+    },
+    "0x42": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "B"
+            },
+            {
+                "name": "D"
+            }
+        ]
+    },
+    "0x43": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "B"
+            },
+            {
+                "name": "E"
+            }
+        ]
+    },
+    "0x44": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "B"
+            },
+            {
+                "name": "H"
+            }
+        ]
+    },
+    "0x45": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "B"
+            },
+            {
+                "name": "L"
+            }
+        ]
+    },
+    "0x46": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "B"
+            },
+            {
+                "name": "HL",
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0x47": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "B"
+            },
+            {
+                "name": "A"
+            }
+        ]
+    },
+    "0x48": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "C"
+            },
+            {
+                "name": "B"
+            }
+        ]
+    },
+    "0x49": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "C"
+            },
+            {
+                "name": "C"
+            }
+        ]
+    },
+    "0x4A": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "C"
+            },
+            {
+                "name": "D"
+            }
+        ]
+    },
+    "0x4B": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "C"
+            },
+            {
+                "name": "E"
+            }
+        ]
+    },
+    "0x4C": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "C"
+            },
+            {
+                "name": "H"
+            }
+        ]
+    },
+    "0x4D": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "C"
+            },
+            {
+                "name": "L"
+            }
+        ]
+    },
+    "0x4E": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "C"
+            },
+            {
+                "name": "HL",
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0x4F": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "C"
+            },
+            {
+                "name": "A"
+            }
+        ]
+    },
+    "0x50": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "D"
+            },
+            {
+                "name": "B"
+            }
+        ]
+    },
+    "0x51": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "D"
+            },
+            {
+                "name": "C"
+            }
+        ]
+    },
+    "0x52": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "D"
+            },
+            {
+                "name": "D"
+            }
+        ]
+    },
+    "0x53": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "D"
+            },
+            {
+                "name": "E"
+            }
+        ]
+    },
+    "0x54": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "D"
+            },
+            {
+                "name": "H"
+            }
+        ]
+    },
+    "0x55": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "D"
+            },
+            {
+                "name": "L"
+            }
+        ]
+    },
+    "0x56": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "D"
+            },
+            {
+                "name": "HL",
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0x57": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "D"
+            },
+            {
+                "name": "A"
+            }
+        ]
+    },
+    "0x58": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "E"
+            },
+            {
+                "name": "B"
+            }
+        ]
+    },
+    "0x59": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "E"
+            },
+            {
+                "name": "C"
+            }
+        ]
+    },
+    "0x5A": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "E"
+            },
+            {
+                "name": "D"
+            }
+        ]
+    },
+    "0x5B": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "E"
+            },
+            {
+                "name": "E"
+            }
+        ]
+    },
+    "0x5C": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "E"
+            },
+            {
+                "name": "H"
+            }
+        ]
+    },
+    "0x5D": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "E"
+            },
+            {
+                "name": "L"
+            }
+        ]
+    },
+    "0x5E": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "E"
+            },
+            {
+                "name": "HL",
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0x5F": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "E"
+            },
+            {
+                "name": "A"
+            }
+        ]
+    },
+    "0x60": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "H"
+            },
+            {
+                "name": "B"
+            }
+        ]
+    },
+    "0x61": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "H"
+            },
+            {
+                "name": "C"
+            }
+        ]
+    },
+    "0x62": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "H"
+            },
+            {
+                "name": "D"
+            }
+        ]
+    },
+    "0x63": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "H"
+            },
+            {
+                "name": "E"
+            }
+        ]
+    },
+    "0x64": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "H"
+            },
+            {
+                "name": "H"
+            }
+        ]
+    },
+    "0x65": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "H"
+            },
+            {
+                "name": "L"
+            }
+        ]
+    },
+    "0x66": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "H"
+            },
+            {
+                "name": "HL",
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0x67": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "H"
+            },
+            {
+                "name": "A"
+            }
+        ]
+    },
+    "0x68": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "L"
+            },
+            {
+                "name": "B"
+            }
+        ]
+    },
+    "0x69": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "L"
+            },
+            {
+                "name": "C"
+            }
+        ]
+    },
+    "0x6A": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "L"
+            },
+            {
+                "name": "D"
+            }
+        ]
+    },
+    "0x6B": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "L"
+            },
+            {
+                "name": "E"
+            }
+        ]
+    },
+    "0x6C": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "L"
+            },
+            {
+                "name": "H"
+            }
+        ]
+    },
+    "0x6D": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "L"
+            },
+            {
+                "name": "L"
+            }
+        ]
+    },
+    "0x6E": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "L"
+            },
+            {
+                "name": "HL",
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0x6F": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "L"
+            },
+            {
+                "name": "A"
+            }
+        ]
+    },
+    "0x70": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "HL",
+                "immediate": false
+            },
+            {
+                "name": "B"
+            }
+        ],
+        "immediate": false
+    },
+    "0x71": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "HL",
+                "immediate": false
+            },
+            {
+                "name": "C"
+            }
+        ],
+        "immediate": false
+    },
+    "0x72": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "HL",
+                "immediate": false
+            },
+            {
+                "name": "D"
+            }
+        ],
+        "immediate": false
+    },
+    "0x73": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "HL",
+                "immediate": false
+            },
+            {
+                "name": "E"
+            }
+        ],
+        "immediate": false
+    },
+    "0x74": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "HL",
+                "immediate": false
+            },
+            {
+                "name": "H"
+            }
+        ],
+        "immediate": false
+    },
+    "0x75": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "HL",
+                "immediate": false
+            },
+            {
+                "name": "L"
+            }
+        ],
+        "immediate": false
+    },
+    "0x76": {
+        "mnemonic": "HALT",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0x77": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "HL",
+                "immediate": false
+            },
+            {
+                "name": "A"
+            }
+        ],
+        "immediate": false
+    },
+    "0x78": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "B"
+            }
+        ]
+    },
+    "0x79": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "C"
+            }
+        ]
+    },
+    "0x7A": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "D"
+            }
+        ]
+    },
+    "0x7B": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "E"
+            }
+        ]
+    },
+    "0x7C": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "H"
+            }
+        ]
+    },
+    "0x7D": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "L"
+            }
+        ]
+    },
+    "0x7E": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "HL",
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0x7F": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "A"
+            }
+        ]
+    },
+    "0x80": {
+        "mnemonic": "ADD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "B"
+            }
+        ]
+    },
+    "0x81": {
+        "mnemonic": "ADD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "C"
+            }
+        ]
+    },
+    "0x82": {
+        "mnemonic": "ADD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "D"
+            }
+        ]
+    },
+    "0x83": {
+        "mnemonic": "ADD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "E"
+            }
+        ]
+    },
+    "0x84": {
+        "mnemonic": "ADD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "H"
+            }
+        ]
+    },
+    "0x85": {
+        "mnemonic": "ADD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "L"
+            }
+        ]
+    },
+    "0x86": {
+        "mnemonic": "ADD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "HL",
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0x87": {
+        "mnemonic": "ADD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "A"
+            }
+        ]
+    },
+    "0x88": {
+        "mnemonic": "ADC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "B"
+            }
+        ]
+    },
+    "0x89": {
+        "mnemonic": "ADC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "C"
+            }
+        ]
+    },
+    "0x8A": {
+        "mnemonic": "ADC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "D"
+            }
+        ]
+    },
+    "0x8B": {
+        "mnemonic": "ADC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "E"
+            }
+        ]
+    },
+    "0x8C": {
+        "mnemonic": "ADC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "H"
+            }
+        ]
+    },
+    "0x8D": {
+        "mnemonic": "ADC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "L"
+            }
+        ]
+    },
+    "0x8E": {
+        "mnemonic": "ADC",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "HL",
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0x8F": {
+        "mnemonic": "ADC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "A"
+            }
+        ]
+    },
+    "0x90": {
+        "mnemonic": "SUB",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "B"
+        }]
+    },
+    "0x91": {
+        "mnemonic": "SUB",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "C"
+        }]
+    },
+    "0x92": {
+        "mnemonic": "SUB",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "D"
+        }]
+    },
+    "0x93": {
+        "mnemonic": "SUB",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "E"
+        }]
+    },
+    "0x94": {
+        "mnemonic": "SUB",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "H"
+        }]
+    },
+    "0x95": {
+        "mnemonic": "SUB",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "L"
+        }]
+    },
+    "0x96": {
+        "mnemonic": "SUB",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "HL",
+            "immediate": false
+        }],
+        "immediate": false
+    },
+    "0x97": {
+        "mnemonic": "SUB",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "A"
+        }]
+    },
+    "0x98": {
+        "mnemonic": "SBC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "B"
+            }
+        ]
+    },
+    "0x99": {
+        "mnemonic": "SBC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "C"
+            }
+        ]
+    },
+    "0x9A": {
+        "mnemonic": "SBC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "D"
+            }
+        ]
+    },
+    "0x9B": {
+        "mnemonic": "SBC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "E"
+            }
+        ]
+    },
+    "0x9C": {
+        "mnemonic": "SBC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "H"
+            }
+        ]
+    },
+    "0x9D": {
+        "mnemonic": "SBC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "L"
+            }
+        ]
+    },
+    "0x9E": {
+        "mnemonic": "SBC",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "HL",
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0x9F": {
+        "mnemonic": "SBC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "A"
+            }
+        ]
+    },
+    "0xA0": {
+        "mnemonic": "AND",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "B"
+        }]
+    },
+    "0xA1": {
+        "mnemonic": "AND",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "C"
+        }]
+    },
+    "0xA2": {
+        "mnemonic": "AND",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "D"
+        }]
+    },
+    "0xA3": {
+        "mnemonic": "AND",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "E"
+        }]
+    },
+    "0xA4": {
+        "mnemonic": "AND",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "H"
+        }]
+    },
+    "0xA5": {
+        "mnemonic": "AND",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "L"
+        }]
+    },
+    "0xA6": {
+        "mnemonic": "AND",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "HL",
+            "immediate": false
+        }],
+        "immediate": false
+    },
+    "0xA7": {
+        "mnemonic": "AND",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "A"
+        }]
+    },
+    "0xA8": {
+        "mnemonic": "XOR",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "B"
+        }]
+    },
+    "0xA9": {
+        "mnemonic": "XOR",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "C"
+        }]
+    },
+    "0xAA": {
+        "mnemonic": "XOR",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "D"
+        }]
+    },
+    "0xAB": {
+        "mnemonic": "XOR",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "E"
+        }]
+    },
+    "0xAC": {
+        "mnemonic": "XOR",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "H"
+        }]
+    },
+    "0xAD": {
+        "mnemonic": "XOR",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "L"
+        }]
+    },
+    "0xAE": {
+        "mnemonic": "XOR",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "HL",
+            "immediate": false
+        }],
+        "immediate": false
+    },
+    "0xAF": {
+        "mnemonic": "XOR",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "A"
+        }]
+    },
+    "0xB0": {
+        "mnemonic": "OR",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "B"
+        }]
+    },
+    "0xB1": {
+        "mnemonic": "OR",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "C"
+        }]
+    },
+    "0xB2": {
+        "mnemonic": "OR",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "D"
+        }]
+    },
+    "0xB3": {
+        "mnemonic": "OR",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "E"
+        }]
+    },
+    "0xB4": {
+        "mnemonic": "OR",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "H"
+        }]
+    },
+    "0xB5": {
+        "mnemonic": "OR",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "L"
+        }]
+    },
+    "0xB6": {
+        "mnemonic": "OR",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "HL",
+            "immediate": false
+        }],
+        "immediate": false
+    },
+    "0xB7": {
+        "mnemonic": "OR",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "A"
+        }]
+    },
+    "0xB8": {
+        "mnemonic": "CP",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "B"
+        }]
+    },
+    "0xB9": {
+        "mnemonic": "CP",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "C"
+        }]
+    },
+    "0xBA": {
+        "mnemonic": "CP",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "D"
+        }]
+    },
+    "0xBB": {
+        "mnemonic": "CP",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "E"
+        }]
+    },
+    "0xBC": {
+        "mnemonic": "CP",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "H"
+        }]
+    },
+    "0xBD": {
+        "mnemonic": "CP",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "L"
+        }]
+    },
+    "0xBE": {
+        "mnemonic": "CP",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "HL",
+            "immediate": false
+        }],
+        "immediate": false
+    },
+    "0xBF": {
+        "mnemonic": "CP",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "A"
+        }]
+    },
+    "0xC0": {
+        "mnemonic": "RET",
+        "bytes": 1,
+        "cycles": [
+            20,
+            8
+        ],
+        "operands": [{
+            "name": "NZ"
+        }]
+    },
+    "0xC1": {
+        "mnemonic": "POP",
+        "bytes": 1,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+            "name": "BC"
+        }]
+    },
+    "0xC2": {
+        "mnemonic": "JP",
+        "bytes": 3,
+        "cycles": [
+            16,
+            12
+        ],
+        "operands": [{
+                "name": "NZ"
+            },
+            {
+                "name": "a16",
+                "bytes": 2
+            }
+        ]
+    },
+    "0xC3": {
+        "mnemonic": "JP",
+        "bytes": 3,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+            "name": "a16",
+            "bytes": 2
+        }]
+    },
+    "0xC4": {
+        "mnemonic": "CALL",
+        "bytes": 3,
+        "cycles": [
+            24,
+            12
+        ],
+        "operands": [{
+                "name": "NZ"
+            },
+            {
+                "name": "a16",
+                "bytes": 2
+            }
+        ]
+    },
+    "0xC5": {
+        "mnemonic": "PUSH",
+        "bytes": 1,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+            "name": "BC"
+        }]
+    },
+    "0xC6": {
+        "mnemonic": "ADD",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "d8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0xC7": {
+        "mnemonic": "RST",
+        "bytes": 1,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+            "name": "00H"
+        }]
+    },
+    "0xC8": {
+        "mnemonic": "RET",
+        "bytes": 1,
+        "cycles": [
+            20,
+            8
+        ],
+        "operands": [{
+            "name": "Z"
+        }]
+    },
+    "0xC9": {
+        "mnemonic": "RET",
+        "bytes": 1,
+        "cycles": [
+            16
+        ],
+        "operands": []
+    },
+    "0xCA": {
+        "mnemonic": "JP",
+        "bytes": 3,
+        "cycles": [
+            16,
+            12
+        ],
+        "operands": [{
+                "name": "Z"
+            },
+            {
+                "name": "a16",
+                "bytes": 2
+            }
+        ]
+    },
+    "0xCB": {
+        "mnemonic": "PREFIX",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0xCC": {
+        "mnemonic": "CALL",
+        "bytes": 3,
+        "cycles": [
+            24,
+            12
+        ],
+        "operands": [{
+                "name": "Z"
+            },
+            {
+                "name": "a16",
+                "bytes": 2
+            }
+        ]
+    },
+    "0xCD": {
+        "mnemonic": "CALL",
+        "bytes": 3,
+        "cycles": [
+            24
+        ],
+        "operands": [{
+            "name": "a16",
+            "bytes": 2
+        }]
+    },
+    "0xCE": {
+        "mnemonic": "ADC",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "d8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0xCF": {
+        "mnemonic": "RST",
+        "bytes": 1,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+            "name": "08H"
+        }]
+    },
+    "0xD0": {
+        "mnemonic": "RET",
+        "bytes": 1,
+        "cycles": [
+            20,
+            8
+        ],
+        "operands": [{
+            "name": "NC"
+        }]
+    },
+    "0xD1": {
+        "mnemonic": "POP",
+        "bytes": 1,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+            "name": "DE"
+        }]
+    },
+    "0xD2": {
+        "mnemonic": "JP",
+        "bytes": 3,
+        "cycles": [
+            16,
+            12
+        ],
+        "operands": [{
+                "name": "NC"
+            },
+            {
+                "name": "a16",
+                "bytes": 2
+            }
+        ]
+    },
+    "0xD3": {
+        "mnemonic": "ILLEGAL_D3",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0xD4": {
+        "mnemonic": "CALL",
+        "bytes": 3,
+        "cycles": [
+            24,
+            12
+        ],
+        "operands": [{
+                "name": "NC"
+            },
+            {
+                "name": "a16",
+                "bytes": 2
+            }
+        ]
+    },
+    "0xD5": {
+        "mnemonic": "PUSH",
+        "bytes": 1,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+            "name": "DE"
+        }]
+    },
+    "0xD6": {
+        "mnemonic": "SUB",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "d8",
+            "bytes": 1
+        }]
+    },
+    "0xD7": {
+        "mnemonic": "RST",
+        "bytes": 1,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+            "name": "10H"
+        }]
+    },
+    "0xD8": {
+        "mnemonic": "RET",
+        "bytes": 1,
+        "cycles": [
+            20,
+            8
+        ],
+        "operands": [{
+            "name": "C"
+        }]
+    },
+    "0xD9": {
+        "mnemonic": "RETI",
+        "bytes": 1,
+        "cycles": [
+            16
+        ],
+        "operands": []
+    },
+    "0xDA": {
+        "mnemonic": "JP",
+        "bytes": 3,
+        "cycles": [
+            16,
+            12
+        ],
+        "operands": [{
+                "name": "C"
+            },
+            {
+                "name": "a16",
+                "bytes": 2
+            }
+        ]
+    },
+    "0xDB": {
+        "mnemonic": "ILLEGAL_DB",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0xDC": {
+        "mnemonic": "CALL",
+        "bytes": 3,
+        "cycles": [
+            24,
+            12
+        ],
+        "operands": [{
+                "name": "C"
+            },
+            {
+                "name": "a16",
+                "bytes": 2
+            }
+        ]
+    },
+    "0xDD": {
+        "mnemonic": "ILLEGAL_DD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0xDE": {
+        "mnemonic": "SBC",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "d8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0xDF": {
+        "mnemonic": "RST",
+        "bytes": 1,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+            "name": "18H"
+        }]
+    },
+    "0xE0": {
+        "mnemonic": "LDH",
+        "bytes": 2,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+                "name": "a8",
+                "bytes": 1,
+                "immediate": false
+            },
+            {
+                "name": "A"
+            }
+        ],
+        "immediate": false
+    },
+    "0xE1": {
+        "mnemonic": "POP",
+        "bytes": 1,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+            "name": "HL"
+        }]
+    },
+    "0xE2": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "C",
+                "immediate": false
+            },
+            {
+                "name": "A"
+            }
+        ],
+        "immediate": false
+    },
+    "0xE3": {
+        "mnemonic": "ILLEGAL_E3",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0xE4": {
+        "mnemonic": "ILLEGAL_E4",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0xE5": {
+        "mnemonic": "PUSH",
+        "bytes": 1,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+            "name": "HL"
+        }]
+    },
+    "0xE6": {
+        "mnemonic": "AND",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "d8",
+            "bytes": 1
+        }]
+    },
+    "0xE7": {
+        "mnemonic": "RST",
+        "bytes": 1,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+            "name": "20H"
+        }]
+    },
+    "0xE8": {
+        "mnemonic": "ADD",
+        "bytes": 2,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+                "name": "SP"
+            },
+            {
+                "name": "r8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0xE9": {
+        "mnemonic": "JP",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": [{
+            "name": "HL"
+        }]
+    },
+    "0xEA": {
+        "mnemonic": "LD",
+        "bytes": 3,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+                "name": "a16",
+                "bytes": 2,
+                "immediate": false
+            },
+            {
+                "name": "A"
+            }
+        ],
+        "immediate": false
+    },
+    "0xEB": {
+        "mnemonic": "ILLEGAL_EB",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0xEC": {
+        "mnemonic": "ILLEGAL_EC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0xED": {
+        "mnemonic": "ILLEGAL_ED",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0xEE": {
+        "mnemonic": "XOR",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "d8",
+            "bytes": 1
+        }]
+    },
+    "0xEF": {
+        "mnemonic": "RST",
+        "bytes": 1,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+            "name": "28H"
+        }]
+    },
+    "0xF0": {
+        "mnemonic": "LDH",
+        "bytes": 2,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "a8",
+                "bytes": 1,
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0xF1": {
+        "mnemonic": "POP",
+        "bytes": 1,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+            "name": "AF"
+        }]
+    },
+    "0xF2": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "C",
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0xF3": {
+        "mnemonic": "DI",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0xF4": {
+        "mnemonic": "ILLEGAL_F4",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0xF5": {
+        "mnemonic": "PUSH",
+        "bytes": 1,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+            "name": "AF"
+        }]
+    },
+    "0xF6": {
+        "mnemonic": "OR",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "d8",
+            "bytes": 1
+        }]
+    },
+    "0xF7": {
+        "mnemonic": "RST",
+        "bytes": 1,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+            "name": "30H"
+        }]
+    },
+    "0xF8": {
+        "mnemonic": "LD",
+        "bytes": 2,
+        "cycles": [
+            12
+        ],
+        "operands": [{
+                "name": "HL"
+            },
+            {
+                "name": "SP",
+                "increment": true
+            },
+            {
+                "name": "r8",
+                "bytes": 1
+            }
+        ]
+    },
+    "0xF9": {
+        "mnemonic": "LD",
+        "bytes": 1,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+                "name": "SP"
+            },
+            {
+                "name": "HL"
+            }
+        ]
+    },
+    "0xFA": {
+        "mnemonic": "LD",
+        "bytes": 3,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+                "name": "A"
+            },
+            {
+                "name": "a16",
+                "bytes": 2,
+                "immediate": false
+            }
+        ],
+        "immediate": false
+    },
+    "0xFB": {
+        "mnemonic": "EI",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0xFC": {
+        "mnemonic": "ILLEGAL_FC",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0xFD": {
+        "mnemonic": "ILLEGAL_FD",
+        "bytes": 1,
+        "cycles": [
+            4
+        ],
+        "operands": []
+    },
+    "0xFE": {
+        "mnemonic": "CP",
+        "bytes": 2,
+        "cycles": [
+            8
+        ],
+        "operands": [{
+            "name": "d8",
+            "bytes": 1
+        }]
+    },
+    "0xFF": {
+        "mnemonic": "RST",
+        "bytes": 1,
+        "cycles": [
+            16
+        ],
+        "operands": [{
+            "name": "38H"
+        }]
+    }
+}
